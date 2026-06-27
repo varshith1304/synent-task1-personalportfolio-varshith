@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M Varshith Reddy | Portfolio</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --bg-light: #f8fafc;
+    --accent: #6366f1;
+    --accent-light: #818cf8;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --card: #ffffff;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, var(--bg) 0%, #1e1b4b 100%);
+    color: #fff;
+    padding: 80px 0 60px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--accent-light);
+    font-weight: 500;
+  }
+
+  /* Sections */
+  section {
+    padding: 60px 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+    color: var(--bg);
+    position: relative;
+    display: inline-block;
+  }
+
+  h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: var(--accent);
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+
+  /* About */
+  #about p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    max-width: 700px;
+  }
+
+  /* Skills */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 10px;
+  }
+
+  .skill-tag {
+    background: var(--card);
+    border: 1px solid #e2e8f0;
+    color: var(--text-dark);
+    padding: 10px 18px;
+    border-radius: 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  /* Contact */
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .contact-list a, .contact-list span {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .contact-list a:hover {
+    color: var(--accent);
+  }
+
+  .contact-icon {
+    display: inline-block;
+    width: 22px;
+    font-weight: bold;
+    color: var(--accent);
+  }
+
+  footer {
+    text-align: center;
+    padding: 24px 0;
+    color: var(--text-light);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 2rem; }
+    header p { font-size: 1rem; }
+    section { padding: 40px 0; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>M Varshith Reddy</h1>
+    <p>Full Stack Developer</p>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a B.Tech student and an aspiring Full Stack Developer who's eager to learn new
+        things and loves solving problems. I enjoy building projects that combine clean
+        code with practical, real-world impact, and I'm always exploring new tools and
+        technologies to grow as a developer.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Data Analytics</span>
+        <span class="skill-tag">Data Visualization</span>
+        <span class="skill-tag">Problem Solving</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-list">
+        <a href="mailto:varshithreddy@example.com"><span class="contact-icon">✉</span>varshithreddy@example.com</a>
+        <a href="tel:+910000000000"><span class="contact-icon">☎</span>+91 00000 00000</a>
+        <a href="#" target="_blank"><span class="contact-icon">in</span>linkedin.com/in/varshithreddy</a>
+        <a href="#" target="_blank"><span class="contact-icon">⌥</span>github.com/varshithreddy</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2026 M Varshith Reddy. All rights reserved.
+  </footer>
+
+</body>
+</html>
